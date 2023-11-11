@@ -15,6 +15,6 @@ JOIN
 WHERE
     P.fd_tgljual BETWEEN '2023-01-01' AND '2023-10-31'
 GROUP BY
-    Nama_Artikel
+    Nama_Artikel, Bulan_Tahun
 ORDER BY
     Bulan_Tahun;

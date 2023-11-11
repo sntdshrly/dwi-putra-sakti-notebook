@@ -1,3 +1,4 @@
+USE gis_db;
 SELECT
     t_penjualandtl_goods.fv_articlename AS Nama_Artikel,
     fv_namacust AS Nama_Toko,
@@ -10,6 +11,6 @@ JOIN
 WHERE
     t_penjualanmst.fd_tgljual BETWEEN '2023-01-01' AND '2023-10-31'
 GROUP BY
-    Nama_Artikel
+    Nama_Artikel, Bulan_Tahun
 ORDER BY
     Bulan_Tahun;

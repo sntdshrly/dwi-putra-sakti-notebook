@@ -10,6 +10,6 @@ JOIN t_penjualandtl_goods ON t_penjualanmst.fv_nopenjualan = t_penjualandtl_good
 WHERE
     t_penjualanmst.fd_tgljual BETWEEN '2023-01-01' AND '2023-10-31'
 GROUP BY
-    brand_tb.fv_brandname, DATE_FORMAT(t_penjualanmst.fd_tgljual, '%Y-%m')
+    brand_tb.fv_brandname, Bulan_Tahun
 ORDER BY
     brand_tb.fv_brandname, DATE_FORMAT(t_penjualanmst.fd_tgljual, '%Y-%m');
